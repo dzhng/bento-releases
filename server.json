@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/registry/main/schema/server.json",
+  "name": "io.github.dzhng/bento",
+  "displayName": "Bento",
+  "description": "One subscription. Every kind of AI. Access frontier models for text, images, video, and voice, plus workspace files, agent sessions, memory, integrations, remote sandboxes, and paid data services.",
+  "vendor": "dzhng, LLC",
+  "homepage": "https://heybento.ai",
+  "repository": "https://github.com/dzhng/bento-releases",
+  "license": "AGPL-3.0-only",
+  "categories": [
+    "ai",
+    "media",
+    "productivity",
+    "developer-tools"
+  ],
+  "tags": [
+    "mcp",
+    "ai",
+    "image-generation",
+    "video-generation",
+    "voice-generation",
+    "text-to-image",
+    "text-to-video",
+    "text-to-speech",
+    "llm",
+    "openai",
+    "anthropic",
+    "agent",
+    "workspace",
+    "file-sync",
+    "memory",
+    "integrations"
+  ],
+  "installations": {
+    "http": {
+      "type": "http",
+      "url": "https://mcp.bento.ing/",
+      "authType": "oauth"
+    }
+  },
+  "examples": [
+    {
+      "title": "Generate an image",
+      "prompt": "Generate a logo for my startup using Bento"
+    },
+    {
+      "title": "Search workspace files",
+      "prompt": "Find all markdown files in my Bento workspace"
+    },
+    {
+      "title": "Start an agent session",
+      "prompt": "Start a new session with my research agent"
+    }
+  ],
+  "capabilities": {
+    "tools": [
+      {
+        "name": "model_image",
+        "description": "Generate images from text prompts using frontier models"
+      },
+      {
+        "name": "model_video",
+        "description": "Generate videos from text prompts"
+      },
+      {
+        "name": "model_chat",
+        "description": "Text generation via chat completions"
+      },
+      {
+        "name": "session_create",
+        "description": "Start a new agent session"
+      },
+      {
+        "name": "file_get",
+        "description": "Read file contents from workspace"
+      },
+      {
+        "name": "file_search",
+        "description": "Search files by name or content"
+      },
+      {
+        "name": "memory_search",
+        "description": "Search workspace memory"
+      },
+      {
+        "name": "integration_tool_execute",
+        "description": "Execute connected integration tools"
+      },
+      {
+        "name": "service_proxy_post",
+        "description": "Call paid data services"
+      }
+    ],
+    "resources": true
+  },
+  "pricing": {
+    "type": "subscription",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$20/month",
+        "features": [
+          "Access to frontier AI models",
+          "Workspace files and agents",
+          "Monthly credits included"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$50/month",
+        "features": [
+          "Higher usage limits",
+          "Priority model access",
+          "Additional credits"
+        ]
+      },
+      {
+        "name": "Team",
+        "price": "$200/month",
+        "features": [
+          "Team workspaces",
+          "Highest usage limits",
+          "Premium support"
+        ]
+      }
+    ]
+  }
+}

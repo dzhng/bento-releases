@@ -1,0 +1,143 @@
+{
+  "models": [
+    {
+      "id": "classifier",
+      "gatewayModelId": "typesafe-ai/jev",
+      "kind": "chat",
+      "name": "Classifier",
+      "simpleName": "classifier",
+      "description": "Bento internal route classifier TypeSafe AI Jev",
+      "internal": true,
+      "hidden": true
+    },
+    {
+      "id": "embedding",
+      "gatewayModelId": "google/gemini-embedding-2",
+      "kind": "embedding",
+      "name": "Embedding",
+      "simpleName": "embedding",
+      "description": "Bento internal embedding model Google Gemini Embedding 2",
+      "internal": true,
+      "hidden": true
+    },
+    {
+      "id": "image",
+      "gatewayModelId": "openai/gpt-image-2.6-flare",
+      "kind": "image",
+      "name": "GPT Image 2.6 Flare",
+      "simpleName": "image",
+      "description": "OpenAI GPT Image 2.6 Flare for fast, general-purpose image generation, editing and animated GIFs",
+      "pricing": {
+        "perImage": 0.04
+      }
+    },
+    {
+      "id": "image:google",
+      "gatewayModelId": "google/gemini-3.1-flash-image",
+      "kind": "image",
+      "name": "Nano Banana 2",
+      "simpleName": "image",
+      "description": "Google Gemini 3.1 Flash Image for image generation",
+      "pricing": {
+        "perImage": 0.067
+      }
+    },
+    {
+      "id": "memory",
+      "gatewayModelId": "openai/gpt-6-luna",
+      "kind": "chat",
+      "name": "Memory",
+      "simpleName": "memory",
+      "description": "Bento internal memory model OpenAI GPT-6 Luna",
+      "internal": true,
+      "hidden": true
+    },
+    {
+      "id": "memory:luna",
+      "gatewayModelId": "openai/gpt-6-luna",
+      "kind": "chat",
+      "name": "Memory",
+      "simpleName": "memory",
+      "description": "Bento internal memory model OpenAI GPT-6 Luna",
+      "internal": true,
+      "hidden": true
+    },
+    {
+      "id": "video",
+      "gatewayModelId": "bytedance/seedance-2.0-fast",
+      "kind": "video",
+      "name": "Seedance 2.0 Fast",
+      "simpleName": "video",
+      "description": "ByteDance Seedance 2.0 Fast for fast video generation",
+      "pricing": {
+        "perSecond": 0.03
+      }
+    },
+    {
+      "id": "video:google",
+      "gatewayModelId": "google/veo-3.1-generate-001",
+      "kind": "video",
+      "name": "Veo 3.1",
+      "simpleName": "video",
+      "description": "Google Veo 3.1 for video generation",
+      "pricing": {
+        "perSecond": 0.4
+      }
+    },
+    {
+      "id": "video:grok",
+      "gatewayModelId": "spacexai/grok-imagine-video-1.5",
+      "kind": "video",
+      "name": "Grok Imagine Video 1.5",
+      "simpleName": "video",
+      "description": "xAI Grok Imagine Video 1.5 for video generation",
+      "pricing": {
+        "perSecond": 0.14
+      }
+    },
+    {
+      "id": "video:kling",
+      "gatewayModelId": "klingai/kling-v3.0-t2v",
+      "kind": "video",
+      "name": "Kling 3.0 Text to Video",
+      "simpleName": "video",
+      "description": "Kling 3.0 for text-to-video generation",
+      "pricing": {
+        "perSecond": 0.1
+      }
+    },
+    {
+      "id": "video:kling:image",
+      "gatewayModelId": "klingai/kling-v3.0-i2v",
+      "kind": "video",
+      "name": "Kling 3.0 Image to Video",
+      "simpleName": "video",
+      "description": "Kling 3.0 for image-to-video generation",
+      "pricing": {
+        "perSecond": 0.1
+      }
+    },
+    {
+      "id": "video:pro",
+      "gatewayModelId": "bytedance/seedance-2.5",
+      "kind": "video",
+      "name": "Seedance 2.5",
+      "simpleName": "video",
+      "description": "ByteDance Seedance 2.5 for high-fidelity video generation",
+      "pricing": {
+        "perSecond": 0.23
+      }
+    },
+    {
+      "id": "video:seedance",
+      "gatewayModelId": "bytedance/seedance-2.5",
+      "kind": "video",
+      "name": "Seedance 2.5",
+      "simpleName": "video",
+      "description": "ByteDance Seedance 2.5 for high-fidelity video generation",
+      "pricing": {
+        "perSecond": 0.23
+      }
+    }
+  ]
+}
